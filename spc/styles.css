@@ -68,6 +68,12 @@ body {
   }
 }
 
+@media screen and (max-width: 375px) {
+  .estate-grid-images {
+    width: 160px;
+  }
+}
+
 .text-container {
   padding: 20px;
   color: #ffffff;
@@ -157,7 +163,7 @@ body {
 .our-investment-container > .header {
   font-family: "Montserrat", sans-serif;
   padding-top: 20px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 500;
 }
 
@@ -221,7 +227,7 @@ body {
 .about-us-container > .header {
   font-family: "Montserrat", sans-serif;
   padding: 20px 10px;
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 500;
 }
 
