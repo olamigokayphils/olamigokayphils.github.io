@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+.upper {
+  background-image: url("https://img.gtsstatic.net/reno/imagereader.aspx?imageurl=https%3A%2F%2Fsir.azureedge.net%2F1103i215%2Fmjrbs25pwcjbmdas91bg3zzv93i215&option=N&h=472&permitphotoenlargement=false");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1080px;
+  height: 600px;
+  margin: auto;
+}
+
+.top-container {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  height: 600px;
+  width: 1080px;
+  max-width: 100%;
+}
+
+.logo-container {
+  width: 100%;
+  background: #f2f2f2;
+  height: 70px;
+}
+
+.logo {
+  padding: 20px;
+  width: 270px;
+}
+
+.caption-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 750px) {
+  .caption-container > .estate-grid {
+    display: none;
+  }
+}
+
+.estate-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 20px;
+}
+
+.estate-grid-images {
+  width: 180px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px 40px;
+  border: 2px solid #f2f2f2;
+}
+
+@media screen and (max-width: 425px) {
+  .estate-grid-images {
+    width: 180px;
+  }
+}
+
+.text-container {
+  padding: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 37px;
+  text-transform: capitalize;
+  width: 400px;
+  font-family: "Lato", sans-serif;
+}
+
+.estate-grid-container {
+  max-width: 90%;
+  display: flex;
+  margin: auto;
+}
+
+@media screen and (min-width: 750px) {
+  .estate-grid-container > .estate-grid {
+    display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+  .estate-grid-container > .estate-grid {
+    display: grid;
+  }
+}
+
+.action-container {
+  font-size: 16px;
+  justify-content: space-between;
+  margin-top: 25px;
+  gap: 10px;
+}
+
+.new-container {
+  position: relative;
+}
+.new-badge {
+  position: absolute;
+  right: -10px;
+  top: 10px;
+  background: red;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+  padding: 3px 10px;
+  font-size: 14px;
+}
+
+.action-btn {
+  margin-top: 5px;
+  /* padding: 10px 20px; */
+  width: 170px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #dc3545;
+  border-radius: 15px;
+  color: #f2f2f2;
+  text-decoration: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-btn-readmore {
+  border: 1px solid goldenrod;
+  /* background-color: rebeccapurple; */
+}
+
+.action-btn-get-started {
+  border: 1px solid goldenrod;
+  background-color: goldenrod;
+  align-items: center;
+}
+
+.our-investment-container {
+  max-width: 1080px;
+  margin: auto;
+  background-color: rgba(218, 217, 217, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.our-investment-container > .header {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.investment-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.investment-container > * {
+  flex-basis: 400px;
+}
+
+.investment {
+  max-width: calc(100% - 20px);
+  margin: auto;
+}
+
+.investment-image {
+  width: 100%;
+  box-shadow: 0 0 4px 2px rgb(232, 230, 230);
+  margin-bottom: 10px;
+}
+
+.investment-detail {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 2;
+}
+
+.green {
+  color: green;
+  margin-right: 5px;
+}
+
+.invetment-action-button {
+  margin-top: 10px;
+  background-color: #dc3545;
+  height: 40px;
+  border-radius: 5px;
+  border: 0;
+  border-color: #dc3545;
+  color: #f2f2f2;
+}
+
+.about-us-container {
+  max-width: 1080px;
+  margin: auto;
+  margin-top: 50px;
+  background-color: rgba(218, 217, 217, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  padding: 5px;
+}
+
+.about-us-container > .header {
+  font-family: "Montserrat", sans-serif;
+  padding: 20px 10px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.about-us-image-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-gap: 5px;
+}
+
+.about-us-grid-images {
+  width: 150px;
+}
+
+.about-us-footer {
+  max-width: 1080px;
+  margin: auto;
+  font-family: "Lato", sans-serif;
+  background-image: url("https://images.pexels.com/photos/4490694/pexels-photo-4490694.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  color: white;
+}
+
+.about-us-footer-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0 10px;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+}
